@@ -1,0 +1,1409 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "PuzzlePlatforms Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win32",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Linux Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Linux",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms LinuxAArch64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms LinuxAArch64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms LinuxAArch64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms LinuxAArch64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Shipping",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms LinuxAArch64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms LinuxAArch64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"LinuxAArch64",
+				"Test",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatformsEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatformsEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatformsEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Linux",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Linux",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatformsEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Linux",
+				"Debug",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Linux",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Linux",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatformsEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Linux",
+				"DebugGame",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Linux",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Linux",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatformsEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Linux",
+				"Development",
+				"D:\\UnrealDev\\repos\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files (x86)\\Epic Games\\UE_4.25"
+			}
+		}
+	]
+}
