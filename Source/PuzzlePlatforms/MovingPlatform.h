@@ -22,14 +22,22 @@ protected:
 	UPROPERTY(EditAnywhere)
 	float Speed = 100.f;
 
-	UPROPERTY(EditAnywhere, meta=(MakeEditWidget = true))
+	UPROPERTY(EditAnywhere, meta = (MakeEditWidget = true))
 	FVector TargetLocation;
+
+	UPROPERTY(EditAnywhere)
+	int ActiveTriggers = 1;
 
 	virtual void BeginPlay() override;
 
-	virtual void Tick(float DeltaTime) override;
+	void MovePlatform(float DeltaTime);
 
 public:
 	AMovingPlatform();
-	
+	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION()
+	void AddActiveTrigger();
+	UFUNCTION()
+	void RemoveActiveTrigger();
 };
