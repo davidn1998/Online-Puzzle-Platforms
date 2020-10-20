@@ -4,6 +4,7 @@
 #include "Engine.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Blueprint/UserWidget.h"
+#include "MenuSystem/MainMenu.h"
 
 UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance()
 {
@@ -24,22 +25,12 @@ void UPuzzlePlatformsGameInstance::LoadMenu()
 {
     if (!ensure(MenuBPClass != nullptr))
         return;
-    UUserWidget *Menu = CreateWidget<UUserWidget>(this, MenuBPClass);
-    Menu->AddToViewport();
+    UMainMenu *Menu = CreateWidget<UMainMenu>(this, MenuBPClass);
 
-    APlayerController *PlayerController = GetFirstLocalPlayerController();
-    if (!ensure(PlayerController != nullptr))
-        return;
-
-    FInputModeUIOnly InputMode;
-    InputMode.SetWidgetToFocus(Menu->TakeWidget());
-    InputMode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
-
-    PlayerController->SetInputMode(InputMode);
-    PlayerController->bShowMouseCursor = true;
+    Menu->SetMenuInterface(this);
 }
 
-void UPuzzlePlatformsGameInstance::Host() const
+void UPuzzlePlatformsGameInstance::Host()
 {
     GEngine->AddOnScreenDebugMessage(0, 2.f, FColor::Green, TEXT("Hosting Game"));
 

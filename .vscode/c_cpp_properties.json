@@ -4,15 +4,14 @@
             "name": "UnrealEngine",
             "includePath": [
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source",
-                "D:\\UnrealDev\\repos\\PuzzlePlatforms\\Source",
+                "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\Engine",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime",
+                "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\Engine\\Classes",
+                "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\Engine\\Public",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\TraceLog\\Public",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\Core\\Public",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\CoreUObject",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\CoreUObject\\Public",
-                "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\Engine",
-                "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\Engine\\Classes",
-                "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\Engine\\Public",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\NetCore",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\Net",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\Net\\Core\\Classes",
@@ -203,6 +202,8 @@
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\Experimental\\GeometryCollectionSimulationCore\\Public",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\ClothingSystemRuntimeInterface",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\ClothingSystemRuntimeInterface\\Public",
+                "D:\\UnrealDev\\repos\\PuzzlePlatforms\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\PuzzlePlatforms",
+                "D:\\UnrealDev\\repos\\PuzzlePlatforms\\Source",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\AugmentedReality",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\AugmentedReality\\Public",
                 "C:\\Program Files (x86)\\Epic Games\\UE_4.25\\Engine\\Source\\ThirdParty\\PhysX3\\PxShared\\include",
@@ -233,11 +234,10 @@
                 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.18362.0\\ucrt",
                 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.18362.0\\shared",
                 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.18362.0\\um",
-                "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.18362.0\\winrt",
-                "${workspaceFolder}/Intermediate/Build/Win64/UE4Editor/Inc/PuzzlePlatforms"
+                "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.18362.0\\winrt"
             ],
             "intelliSenseMode": "msvc-x64",
-            "defines": [
+			"defines": [
                 "IS_PROGRAM=0",
                 "UE_EDITOR=1",
                 "ENABLE_PGO_PROFILE=0",
