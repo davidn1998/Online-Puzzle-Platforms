@@ -14,10 +14,17 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 
+private:
+	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = true))
+	TSubclassOf<class UUserWidget> MenuBPClass;
+
 public:
 	UPuzzlePlatformsGameInstance();
 
-	virtual void init();
+	virtual void Init() override;
+
+	UFUNCTION(BlueprintCallable)
+	void LoadMenu();
 
 	UFUNCTION(Exec)
 	void Host() const;
