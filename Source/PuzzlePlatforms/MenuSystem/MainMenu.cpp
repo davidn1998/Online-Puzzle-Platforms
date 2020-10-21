@@ -1,7 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "MainMenu.h"
-#include "UMG/Public/Components/Button.h"
+#include "Components/Button.h"
+#include "Components/WidgetSwitcher.h"
+#include "Components/CanvasPanel.h"
+#include "Components/EditableTextBox.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 void UMainMenu::HostServer()
 {
@@ -13,7 +17,34 @@ void UMainMenu::HostServer()
 
 void UMainMenu::JoinServer()
 {
-    UE_LOG(LogTemp, Warning, TEXT("JOINING SERVER"));
+    if (!ensure(MenuInterface != nullptr))
+        return;
+
+    const FString Address = AddressInput->GetText().ToString();
+    MenuInterface->Join(Address);
+}
+
+void UMainMenu::ShowMainMenu()
+{
+    if (!ensure(MenuSwitcher != nullptr))
+        return;
+    MenuSwitcher->SetActiveWidget(MainMenu);
+}
+
+void UMainMenu::ShowJoinMenu()
+{
+    if (!ensure(MenuSwitcher != nullptr))
+        return;
+    MenuSwitcher->SetActiveWidget(JoinMenu);
+}
+
+void UMainMenu::QuitGame()
+{
+    UE_LOG(LogTemp, Warning, TEXT("QUITING"));
+    APlayerController *PlayerController = GetWorld()->GetFirstPlayerController();
+    if (!ensure(PlayerController != nullptr))
+        return;
+    UKismetSystemLibrary::QuitGame(this, PlayerController, EQuitPreference::Quit, false);
 }
 
 void UMainMenu::SetMenuInterface(IMenuInterface *InMenuInterface)
@@ -55,15 +86,31 @@ bool UMainMenu::Initialize()
     bool Success = Super::Initialize();
     if (!Success)
         return false;
+
     if (!ensure(HostButton != nullptr))
         return false;
 
     HostButton->OnClicked.AddDynamic(this, &UMainMenu::HostServer);
 
-    if (!ensure(JoinButton != nullptr))
+    if (!ensure(JoinMenuButton != nullptr))
         return false;
 
-    JoinButton->OnClicked.AddDynamic(this, &UMainMenu::JoinServer);
+    JoinMenuButton->OnClicked.AddDynamic(this, &UMainMenu::ShowJoinMenu);
+
+    if (!ensure(JoinServerButton != nullptr))
+        return false;
+
+    JoinServerButton->OnClicked.AddDynamic(this, &UMainMenu::JoinServer);
+
+    if (!ensure(BackButton != nullptr))
+        return false;
+
+    BackButton->OnClicked.AddDynamic(this, &UMainMenu::ShowMainMenu);
+
+    if (!ensure(QuitButton != nullptr))
+        return false;
+
+    QuitButton->OnClicked.AddDynamic(this, &UMainMenu::QuitGame);
 
     Setup();
 

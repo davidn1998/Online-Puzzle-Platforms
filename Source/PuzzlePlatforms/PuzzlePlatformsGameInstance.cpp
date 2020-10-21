@@ -5,6 +5,7 @@
 #include "UObject/ConstructorHelpers.h"
 #include "Blueprint/UserWidget.h"
 #include "MenuSystem/MainMenu.h"
+#include "MenuSystem/MenuOverlay.h"
 
 UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance()
 {
@@ -18,28 +19,34 @@ UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance()
 
 void UPuzzlePlatformsGameInstance::Init()
 {
-    UE_LOG(LogTemp, Warning, TEXT("WBP Name: %s"), *MenuBPClass->GetName());
 }
 
-void UPuzzlePlatformsGameInstance::LoadMenu()
+void UPuzzlePlatformsGameInstance::LoadMainMenu()
 {
-    if (!ensure(MenuBPClass != nullptr))
+    if (!ensure(MainMenuBPClass != nullptr))
         return;
-    UMainMenu *Menu = CreateWidget<UMainMenu>(this, MenuBPClass);
+    UMainMenu *MainMenu = CreateWidget<UMainMenu>(this, MainMenuBPClass);
 
-    Menu->SetMenuInterface(this);
+    MainMenu->SetMenuInterface(this);
+}
+
+void UPuzzlePlatformsGameInstance::LoadMenuOverlay()
+{
+    if (!ensure(MenuOverlayBPClass != nullptr))
+        return;
+
+    UMenuOverlay *MenuOverlay = CreateWidget<UMenuOverlay>(this, MenuOverlayBPClass);
+
+    MenuOverlay->SetMenuInterface(this);
 }
 
 void UPuzzlePlatformsGameInstance::Host()
 {
-    GEngine->AddOnScreenDebugMessage(0, 2.f, FColor::Green, TEXT("Hosting Game"));
-
     GetWorld()->ServerTravel("/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen");
 }
 
-void UPuzzlePlatformsGameInstance::Join(const FString Address) const
+void UPuzzlePlatformsGameInstance::Join(const FString &Address)
 {
-    GEngine->AddOnScreenDebugMessage(1, 2.f, FColor::Green, FString::Printf(TEXT("Joining game at address: %s"), *Address));
 
     APlayerController *PlayerController = GetFirstLocalPlayerController();
 
@@ -47,4 +54,14 @@ void UPuzzlePlatformsGameInstance::Join(const FString Address) const
         return;
 
     PlayerController->ClientTravel(Address, ETravelType::TRAVEL_Absolute);
+}
+
+void UPuzzlePlatformsGameInstance::Quit()
+{
+    APlayerController *PlayerController = GetFirstLocalPlayerController();
+
+    if (!ensure(PlayerController != nullptr))
+        return;
+
+    PlayerController->ClientTravel("/Game/ThirdPersonCPP/Maps/MainMenu", ETravelType::TRAVEL_Absolute);
 }

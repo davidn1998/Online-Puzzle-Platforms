@@ -17,7 +17,10 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance, p
 
 private:
 	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = true))
-	TSubclassOf<class UUserWidget> MenuBPClass;
+	TSubclassOf<class UUserWidget> MainMenuBPClass;
+
+	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = true))
+	TSubclassOf<class UUserWidget> MenuOverlayBPClass;
 
 public:
 	UPuzzlePlatformsGameInstance();
@@ -25,11 +28,17 @@ public:
 	virtual void Init() override;
 
 	UFUNCTION(BlueprintCallable)
-	void LoadMenu();
+	void LoadMainMenu();
+
+	UFUNCTION(BlueprintCallable)
+	void LoadMenuOverlay();
 
 	UFUNCTION(Exec)
 	virtual void Host() override;
 
 	UFUNCTION(Exec)
-	void Join(const FString Address) const;
+	virtual void Join(const FString &Address) override;
+
+	UFUNCTION(Exec)
+	virtual void Quit() override;
 };
